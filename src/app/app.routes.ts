@@ -1,7 +1,7 @@
-import { NgModel } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { BarControllerComponent } from './bar-controller/bar-controller.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
-    { path: '', component: BarControllerComponent }
+    { path: 'menu', component: BarControllerComponent }
 ];
