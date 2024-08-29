@@ -8,7 +8,14 @@
         {
             "id": 1,
             "name": "Red Cocktails",
+            "description": "Delicious strawberry drink.",
             "image": "red-cocktails.png"
+        },
+        {
+            "id": 2,
+            "name": "Yellow Cocktails",
+            "description": "Delicious banana drink.",
+            "image": "yellow-cocktails.png"
         }
     ]    
 }
