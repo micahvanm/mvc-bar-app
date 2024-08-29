@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,6 +8,11 @@ import { Router, RouterOutlet } from '@angular/router';
   templateUrl: './bar-controller.component.html',
   styleUrl: './bar-controller.component.css'
 })
-export class BarControllerComponent {
+export class BarControllerComponent implements OnInit{
+  
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
+  
 }

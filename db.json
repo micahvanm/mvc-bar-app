@@ -1,9 +1,12 @@
 {
     "cart":[
-
+        {
+            "id": 1
+        }
     ],
     "drinks":[
         {
+            "id": 1,
             "name": "Red Cocktails",
             "image": "red-cocktails.png"
         }
