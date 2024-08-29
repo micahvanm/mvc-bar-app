@@ -10,4 +10,8 @@ import { Router, RouterOutlet } from '@angular/router';
 })
 export class BarControllerComponent {
 
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+
 }
