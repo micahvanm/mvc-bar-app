@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-    margin: 0px;
+.nowrap {
+    display: inline;
+}
+
+.navitem {
+    padding-right: 30px;
 }
 
 nav {
@@ -8,4 +12,8 @@ nav {
     background-color: cornflowerblue;
     padding: 10px;
     padding-left: 30px;
+}
+
+body {
+    margin: 0px;
 }

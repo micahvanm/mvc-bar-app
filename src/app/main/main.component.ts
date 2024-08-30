@@ -17,6 +17,6 @@ export class MainComponent {
   }
 
   goToOrder(){
-    this.router.navigateByUrl('/order')
+    this.router.navigateByUrl("/orders")
   }
 }

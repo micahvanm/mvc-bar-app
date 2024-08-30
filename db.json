@@ -1,10 +1,10 @@
 {
     "queue":[ 
-        { "drink-id": 1 },
-        { "drink-id": 2 },
-        { "drink-id": 1 },
-        { "drink-id": 2 },
-        { "drink-id": 3 }
+        { "drink_id": 1 },
+        { "drink_id": 2 },
+        { "drink_id": 1 },
+        { "drink_id": 2 },
+        { "drink_id": 3 }
      ],
     "drinks":[
         {

@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Drinks } from './drink';
+import { Queue } from './queue';
 
 @Injectable({
     providedIn: 'root',
 
 })
 export class GetDrinks {
-    drinks: Drinks[] = []
+    drinks: Queue[] = []
 
     constructor(private httpClient: HttpClient) { }
 
     getInitDrinks(){
-        return this.httpClient.get<Drinks[]>('http://localhost:3000/drinks')
+        return this.httpClient.get<Queue[]>('http://localhost:3000/queue')
     }
 
 }

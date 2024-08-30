@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BarControllerComponent } from '../bar-controller/bar-controller.component';
 import { GetDrinksComponent } from '../get-drinks/get-drinks.component';
 import { Drinks } from '../services/drink';
-import { NgFor } from '@angular/common';
+import { NgFor, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-menu',
