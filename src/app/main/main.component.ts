@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
 export class MainComponent {
 
-  constructor(){}
+  constructor(private router: Router){}
 
   goToMenu(){
-    // this.router.navigateByUrl("/menu")
+    this.router.navigateByUrl("/menu")
+  }
+
+  goToOrder(){
+    this.router.navigateByUrl('/order')
   }
 }

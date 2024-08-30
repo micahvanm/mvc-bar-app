@@ -1,21 +1,29 @@
 {
-    "cart":[
-        {
-            "id": 1
-        }
-    ],
+    "queue":[ 
+        { "drink-id": 1 },
+        { "drink-id": 2 },
+        { "drink-id": 1 },
+        { "drink-id": 2 },
+        { "drink-id": 3 }
+     ],
     "drinks":[
         {
             "id": 1,
-            "name": "Red Cocktails",
+            "name": "Red Cocktail",
             "description": "Delicious strawberry drink.",
             "image": "red-cocktails.png"
         },
         {
             "id": 2,
-            "name": "Yellow Cocktails",
+            "name": "Yellow Cocktail",
             "description": "Delicious banana drink.",
             "image": "yellow-cocktails.png"
+        },
+        {
+            "id": 3,
+            "name": "Clear Cocktail",
+            "description": "Delicious invisible drink.",
+            "image": "clear-cocktails.png"
         }
     ]    
 }

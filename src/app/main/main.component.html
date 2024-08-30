@@ -1,2 +1,10 @@
-<p>main works!</p>
-<a href="/menu">Go to Menu</a>
+<nav class="navbar">
+    <h1 class="nowrap navitem">MVC Bar App</h1>
+    <a href="/menu" class="navitem" type="">View Menu</a>
+    <a href="/orders" class="navitem" type="">View Current Orders</a>
+</nav>
+
+<div class="main-button">
+    <div class="child" (click)="goToMenu()">Patrons</div>
+    <div class="child" (click)="goToOrder()">Bartender</div>
+</div>
