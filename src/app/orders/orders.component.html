@@ -4,4 +4,5 @@
     <a href="/orders" class="navitem" type="">View Current Orders</a>
 </nav>
 
-<p>orders works!</p>
+<h1>Orders:</h1>
+<p *ngFor="let o of queue">Next up: {{ o.drink_id }} <button (click)="finishDrink(o.drink_id)">Complete Drink Order</button></p>

@@ -3,6 +3,7 @@ import { BarControllerComponent } from '../bar-controller/bar-controller.compone
 import { GetDrinksComponent } from '../get-drinks/get-drinks.component';
 import { Drinks } from '../services/drink';
 import { NgFor, NgOptimizedImage } from '@angular/common';
+import { GetQueueComponent } from '../get-queue/get-queue.component';
 
 @Component({
   selector: 'app-menu',
@@ -15,7 +16,8 @@ export class MenuComponent implements OnInit {
   imagesDir = "../../public/images/"
   drinks: Drinks[] = []
   
-  constructor(private get_drinks : GetDrinksComponent) { }  
+  
+  constructor(private get_drinks : GetDrinksComponent, private get_queue: GetQueueComponent) { }  
   
   ngOnInit(): void {
     this.initDrinks()
@@ -30,6 +32,15 @@ export class MenuComponent implements OnInit {
 
   getDrinks(){
     return this.drinks
+  }
+
+  urlImage(drink: Drinks){
+    // console.log(`./public/images/${drink.image}`)
+    return `./public/images/${drink.image}`
+  }
+
+  addToQueue(drinkID: number){
+    this.get_queue.addDrinkQueue(drinkID)
   }
   
 }
