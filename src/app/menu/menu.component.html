@@ -4,9 +4,17 @@
     <a href="/orders" class="navitem" type="">View Current Orders</a>
 </nav>
 
-<h1>Take a Look at Our Selections:</h1>
-<p></p>
-<div *ngFor="let d of drinks">
-    <h3>{{ d.name }}</h3>
-    <p>{{ d.description }}</p>
+<div class="main">
+    <h1>Review Our Selections:</h1>
+    <div class="flex">
+        <div class="flex-child" *ngFor="let d of drinks">
+            <h3>{{ d.name }}</h3>
+            <!-- <p>{{ "../../" + d.image }}</p> -->
+            <img [src]="urlImage(d)" alt="picture of a drink" width="150px">
+            <!-- <img src="{{d.image}}" alt="picture of drink" width="150px">
+            <img src='{{ "/" + d.image}}' alt="picture of drink" width="150px"> -->
+            <p>{{ d.description }}</p>
+            <button (click)="addToQueue(d.id)">Add to Queue</button>
+        </div>
+    </div>
 </div>
