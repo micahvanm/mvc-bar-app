@@ -1,0 +1,22 @@
+.nowrap {
+    display: inline;
+}
+
+.navitem {
+    padding-right: 30px;
+}
+
+.main-button {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.child {
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    /* margin: auto; */
+    padding: 30px;
+}

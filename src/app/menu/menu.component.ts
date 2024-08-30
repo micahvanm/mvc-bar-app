@@ -12,7 +12,7 @@ import { NgFor } from '@angular/common';
   styleUrl: './menu.component.css',
 })
 export class MenuComponent implements OnInit {
-  imagesDir = "../../images/"
+  imagesDir = "../../public/images/"
   drinks: Drinks[] = []
   
   constructor(private get_drinks : GetDrinksComponent) { }  
