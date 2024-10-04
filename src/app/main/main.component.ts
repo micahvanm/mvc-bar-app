@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -9,8 +8,8 @@ import { Router } from '@angular/router';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
-  
-  constructor(private router : Router){}
+
+  constructor(){}
 
   goToMenu(){
     // this.router.navigateByUrl("/menu")
